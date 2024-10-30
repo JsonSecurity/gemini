@@ -115,7 +115,8 @@ curl -sN https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:gene
         | sed 's!\*\*!\\'"$b"'!g' \
         | sed 's!'"$c"'m\\n!0m\\n!g' \
         | sed 's!'"$c"'m !0m !g' \
-        | sed 's!\\n\*!\\n -!g')
+        | sed 's!\\n\*!\\n -!g' \
+        | sed 's!\\"!"!g')
 
 	if [[ ! -n $chat ]];then
 		echo -e "$E Response not found :("

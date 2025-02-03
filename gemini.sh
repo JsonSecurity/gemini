@@ -121,7 +121,7 @@ curl -sN https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:gene
 	if [[ ! -n $chat ]];then
 		echo -e "$E Response not found :("
 	else
-    	echo -e "$IA $chat"
+    	echo -e " $chat"
     fi
 }
 

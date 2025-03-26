@@ -92,7 +92,7 @@ banner() {
 
 request() {
 
-curl -sN https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$APIKEY \
+curl -sN https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$APIKEY \
  -H 'Content-Type: application/json' \
  -d    "{
             \"contents\":
